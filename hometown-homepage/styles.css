@@ -42,3 +42,25 @@ img {
     border-radius: 10px;
     background: #457B9D;
 }
+
+#activities {
+    padding: 40px 0;
+    background: #F1FAEE;
+}
+
+#activities-title {
+    margin: 0 0 50px;
+}
+
+#activities-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.activity {
+    width: 200px;
+}
+
+.activities-img {
+    border-radius: 50%;
+}
