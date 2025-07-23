@@ -1,13 +1,11 @@
-# coc2e4f69b48a9e0c25e096d8
-
-Quick start:
-
+# Getting Started
+Install the dependencies and run the project
 ```
-$ npm install
-$ npm start
-````
+npm install
+npm start
+```
 
-Head over to https://vitejs.dev/ to learn more about using vite
+Head over to https://vitejs.dev/ to learn more about configuring vite
 ## About Scrimba
 
 At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
