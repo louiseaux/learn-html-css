@@ -19,7 +19,7 @@ html, body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     border-bottom: 1px solid #C6C6C6;
     background-color: #fff;
@@ -38,6 +38,7 @@ header {
 
 .header {
     display: flex;
+    gap: 8px;
     padding: 10px;
     line-height: 15px;
 }
@@ -49,7 +50,7 @@ header {
 /* images */
 
 .logo {
-    width: 75px;
+    width: 100px;
 }
 
 .user-avatar,
@@ -58,15 +59,15 @@ header {
     border-radius: 50%;
 }
 
-.avatar {
-    margin-right: 5px;
+.user-avatar {
+    margin-left: auto;
 }
 
 .img {
     width: 100%;
 }
 
-.control-bar img {
+.icon {
     width: 24px;
     margin-right: 10px;
 }
