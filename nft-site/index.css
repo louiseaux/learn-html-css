@@ -1,108 +1,125 @@
-body{
-    font-size: 16px;
+body {
     color: #2b283a;
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-/* typography */
+/* ----- TYPOGRAPHY ----- */
 
-h1, h3{
+h1, 
+h3 {
     margin: 0;
 }
 
-h1{
+h1 {
     color: whitesmoke;
     font-size: 36px;
 }
 
-h2{
+h2 {
+    color: #451c7a;
+    font-size: 28px;
     margin-top: 0;
 }
 
-h3{
-    color: #d0aaff;
+h3 {
     font-size: 20px;
 }
 
-p{
+p {
     line-height: 23px;
 }
 
-/* links */
+.subheading {
+    display: block;
+    font-size: 20px;
+    color: #d0aaff;
+}
 
-a{
+.section-two h2 {
+    color: inherit;
+}
+
+/* ----- LINKS ----- */
+
+a {
     color: #ef5839;
     text-decoration: underline dotted; 
 }
 
-a:hover, a:active{
+a:hover, 
+a:active {
     color: #d4b44c;
 }
 
-.btn{
-    padding: 10px 19px;
-    border-radius: 4.6px;
+.btn {
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4.6px;
 }
 
-.btn-dark{
+.btn-dark {
+    color: whitesmoke;
     background: #5f29a3;
-    color: whitesmoke
 }
 
-.btn-mid{
-    background: #F0E0FF; 
+.btn-mid {
     color: #5f29a3; 
+    background: #f0e0ff; 
 }
 
-.btn-light{
+.btn-light {
+    color: #5f29a3; 
     background: whitesmoke;
-    color: #5f29a3; 
 }
- 
+
 .btn:hover, 
-.btn:active{
-    background-color: #f3e885;
+.btn:active {
     color: #2b238a;
+    background-color: #f3e885;
 }
 
-/* layout */
+/* ----- LAYOUT ----- */
 
-header, section, footer{
-    padding: 45px 0;
+header, 
+section, 
+footer {
+    padding: 46px 0;
 }
 
-header, .section-two{
+header, 
+.section-two {
     background-color: #5f29a3;
 }
 
-.section-two{
+.section-two {
     color: whitesmoke;
 }
 
-.container{
-    width: 620px;
+.container {
+    width: 640px;
     margin: 0 auto;
 }
 
-.main-image{
-    width:100%;
+.main-image {
+    width: 100%;
+    margin-bottom: 32px;
 }
 
-.section-two-image-container{
+.section-two-image-container {
     display: flex;
     justify-content: space-between;
 }
 
-.feature-image{
-    width: 300px;
+.feature-image {
+    width: 310px;
     border-radius: 4.6px;
 }
 
-footer{
+footer {
     text-align: center;
     color: #5f29a3;
 }
