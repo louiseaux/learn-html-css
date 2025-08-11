@@ -1,0 +1,14 @@
+{
+  "name": "css-grid",
+  "description": "https://scrimba.com/s06c8fn/s0kogbv8nv/head",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "latest"
+  },
+  "devDependencies": {}
+}
