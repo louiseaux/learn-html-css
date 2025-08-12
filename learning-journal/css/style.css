@@ -19,6 +19,10 @@ h1 {
     font-size: 0.875rem;
 }
 
+h3 {
+    font-size: 1rem;
+}
+
 p {
     line-height: 1.3;
 }
@@ -43,11 +47,6 @@ header {
     margin: 0 auto;
 }
 
-.view-more {
-    text-align: center;
-    margin-bottom: 2em;
-}
-
 footer {
     background-color: #202020;
     color: #D7D7D7;
@@ -69,7 +68,7 @@ footer p {
     Featured Article 
    ================= */
 
-.featured-article {
+.featured {
     background-image: url('../images/featured-post-img.png');
     background-size: cover;
     background-color: #151515;
@@ -77,14 +76,24 @@ footer p {
     padding: 6em 1.25em 0.75em;
 }
 
-.featured-article .article-info {
+.featured .article-info {
     font-size: 0.75rem;
 }
 
-.featured-article .article-title {
+.featured .article-title {
     font-size: 2rem;
     line-height: 1.1;
     margin: 0.15em 0;
+}
+
+.featured-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0.5em 0 0.35em 0;
+}
+
+.featured-img {
+    width: 100%;
 }
 
 /* =================
@@ -98,7 +107,7 @@ footer p {
 }
 
 article {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .article-info {
@@ -114,6 +123,24 @@ article {
 .article-title {
     font-size: 1.5rem;
     margin: 0.5em 0 0.35em 0;
+}
+
+.article-preview {
+    margin-top: 0;
+    color: #505050;
+}
+
+.recent-posts {
+    text-align: center;
+}
+
+.recent-posts h3 {
+    margin: 0 0 1.5em;
+}
+
+.view-more {
+    text-align: center;
+    margin-bottom: 2.5em;
 }
 
 /* =================
@@ -160,28 +187,16 @@ ul {
 .about h1 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 2rem;
+    line-height: 1.1;
+    margin: 0.5em 0 0;
 }
 
-.about h3 {
-    font-size: 1rem;
+.about-info {
+    margin-bottom: 2.5em;
 }
 
 .avatar {
     border-radius: 50%;
-}
-
-.about-preview {
-    margin-top: 2.5em;
-}
-
-.posts-container {
-    padding: 0;
-}
-
-.posts-title {
-    font-size: 1rem;
-    text-align: center;
-    margin: 2.25em 0 1.5em;
 }
 
 /* =================
