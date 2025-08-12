@@ -1,0 +1,197 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #151515;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #FAFAFA;
+    margin: 0;
+    /* fix smaller mobile width issues */
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875rem;
+}
+
+p {
+    line-height: 1.3;
+}
+
+.view-more a {
+    font-weight: 600;
+    color: #000;
+}
+
+/* =================
+    Site Layout 
+   ================= */
+
+header {
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    padding-top: 1.5em;
+    margin: 0 auto;
+}
+
+.view-more {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+footer {
+    background-color: #202020;
+    color: #D7D7D7;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 2.5em 0;
+}
+
+footer p {
+    margin: 0.25em 0 0;
+}
+
+.footer-info {
+    color: #ECECEC;
+    font-weight: 600;
+}
+
+/* =================
+    Featured Article 
+   ================= */
+
+.featured-article {
+    background-image: url('../images/featured-post-img.png');
+    background-size: cover;
+    background-color: #151515;
+    color: #fff;
+    padding: 6em 1.25em 0.75em;
+}
+
+.featured-article .article-info {
+    font-size: 0.75rem;
+}
+
+.featured-article .article-title {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin: 0.15em 0;
+}
+
+/* =================
+    Article List Layout 
+   ================= */
+
+.posts {
+    display: grid;
+    gap: 1em;  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr))
+}
+
+article {
+    margin-bottom: 0.5em;
+}
+
+.article-info {
+    text-transform: uppercase;
+}
+
+.article-img {
+    width: 100%;
+    border-radius: 3px;
+    margin-bottom: 1em;
+}
+
+.article-title {
+    font-size: 1.5rem;
+    margin: 0.5em 0 0.35em 0;
+}
+
+/* =================
+    Navigation 
+   ================= */
+
+.site-header,
+.logo,
+nav ul {
+    display: flex;
+}
+
+.site-header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1.5em;
+}
+
+.logo {
+    gap: 0.25em;
+}
+
+nav a {
+    color: #090909;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+ul {
+    list-style-type: none;
+    gap: 2em;
+}
+
+/* =================
+    About Page 
+   ================= */
+
+.about {
+    color: #151515;
+}
+
+.about h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+}
+
+.about h3 {
+    font-size: 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.about-preview {
+    margin-top: 2.5em;
+}
+
+.posts-container {
+    padding: 0;
+}
+
+.posts-title {
+    font-size: 1rem;
+    text-align: center;
+    margin: 2.25em 0 1.5em;
+}
+
+/* =================
+    Media queries 
+   ================= */
+
+@media (min-width: 768px) {
+    .about-info {
+        display: flex;
+        align-items: center;
+        gap: 1.5em;
+    }
+}
