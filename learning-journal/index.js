@@ -1,4 +1,4 @@
-// Fonts
+// Google Fonts
 const head = document.getElementById('head')
 head.innerHTML += `
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,37 +38,55 @@ footer.innerHTML = `
 
 // Recent Posts
 const recentPosts = document.getElementById('recent-posts')
-recentPosts.innerHTML = `
-    <div class="recent-title">
-        <h3>Recent posts</h3>
-    </div>
-    <div class="posts">
-        <article>
-            <img class="article-img" src="images/post-img-01.jpg" alt="Post thumbnail">
-            <span class="article-info">July 23, 2022</span>
-            <h2 class="article-title">Blog one</h2>
-            <p class="article-preview">
-                I'm excited to start a new learning journey</strong> as a Scrimba Bootcamp student!
-                            After several months of learning in the Frontend Developer Career Path.
-            </p>                
-        </article>
-        <article>
-            <img class="article-img" src="images/post-img-02.jpg" alt="Post thumbnail">
-            <span class="article-info">July 23, 2022</span>
-            <h2 class="article-title">Blog two</h2>
-            <p class="article-preview">
-                I'm excited to start a new learning journey</strong> as a Scrimba Bootcamp student!
-                After several months of learning in the Frontend Developer Career Path.
-            </p>                
-        </article>
-        <article>
-            <img  class="article-img" src="images/post-img-03.jpg" alt="Post thumbnail">
-            <span class="article-info">July 23, 2022</span>
-            <h2 class="article-title">Blog three</h2>
-            <p class="article-preview">
-                I'm excited to start a new learning journey</strong> as a Scrimba Bootcamp student!
-                After several months of learning in the Frontend Developer Career Path.
-            </p>                
-        </article>
-    </div>
-`
+if (recentPosts) {
+    recentPosts.innerHTML = `
+        <div class="recent-title">
+            <h3>Recent posts</h3>
+        </div>
+        <div class="posts">
+            <article>
+                <img class="article-img" src="images/post-img-01.jpg" alt="Post thumbnail">
+                <span class="article-info">July 23, 2022</span>
+                <h2 class="article-title">Blog one</h2>
+                <p class="article-preview">
+                    I'm excited to start a new learning journey</strong> as a Scrimba Bootcamp student!
+                                After several months of learning in the Frontend Developer Career Path.
+                </p>                
+            </article>
+            <article>
+                <img class="article-img" src="images/post-img-02.jpg" alt="Post thumbnail">
+                <span class="article-info">July 23, 2022</span>
+                <h2 class="article-title">Blog two</h2>
+                <p class="article-preview">
+                    I'm excited to start a new learning journey</strong> as a Scrimba Bootcamp student!
+                    After several months of learning in the Frontend Developer Career Path.
+                </p>                
+            </article>
+            <article>
+                <img  class="article-img" src="images/post-img-03.jpg" alt="Post thumbnail">
+                <span class="article-info">July 23, 2022</span>
+                <h2 class="article-title">Blog three</h2>
+                <p class="article-preview">
+                    I'm excited to start a new learning journey</strong> as a Scrimba Bootcamp student!
+                    After several months of learning in the Frontend Developer Career Path.
+                </p>                
+            </article>
+        </div>
+    `
+}
+
+
+const viewMoreBtn = document.getElementById('view-more-btn')
+if (viewMoreBtn) {
+    viewMoreBtn.addEventListener('click', function() {
+        const posts = document.getElementsByClassName('post')
+        for (let post of posts) {
+            post.classList.toggle('hidden')
+            if (!post.classList.contains('hidden')) {
+                viewMoreBtn.textContent = 'View Less'
+            } else {
+                viewMoreBtn.textContent = 'View More'
+            }
+        }
+    })
+}

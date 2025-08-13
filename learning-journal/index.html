@@ -3,6 +3,7 @@
     <head id="head">
         <title>My Learning Journal</title>
         <link rel="stylesheet" href="css/style.css">
+        <!-- Google Fonts -->
     </head>
 
     <body>
@@ -11,17 +12,21 @@
         </header>
         <main>
             <article class="featured">
-                    <span class="article-info">July 23, 2022</span>
-                    <h2 class="article-title">My new journey as a bootcamp student.</h2>
-                    <p>
-                        After several months of learning</strong> in the Frontend Developer Career Path,
-                        I've made the big jump over to the Bootcamp to get expert code reviews of my
-                        Solo Projects projects and meet like-minded peers.
-                    </p>                
+                <a href="post.html">
+                    <div class="featured-text container">
+                        <span class="article-info">July 23, 2022</span>
+                        <h2 class="article-title">My new journey as a bootcamp student.</h2>
+                        <p class="article-preview">
+                            After several months of learning</strong> in the Frontend Developer Career Path,
+                            I've made the big jump over to the Bootcamp to get expert code reviews of my
+                            Solo Projects projects and meet like-minded peers.
+                        </p> 
+                    </div>   
+                </a>        
             </article>
 
             <section class="container">
-                <div class="posts">
+                <div class="posts" id="posts">
                     <article>
                         <img class="article-img" src="images/post-img-01.jpg" alt="Post thumbnail">
                         <span class="article-info">July 23, 2022</span>
@@ -49,7 +54,7 @@
                             After several months of learning in the Frontend Developer Career Path.
                         </p>                
                     </article>
-                    <article>
+                    <article class="hidden post">
                         <img class="article-img" src="images/post-img-04.jpg" alt="Post thumbnail">
                         <span class="article-info">July 23, 2022</span>
                         <h2 class="article-title">Blog four</h2>
@@ -58,7 +63,7 @@
                             After several months of learning in the Frontend Developer Career Path.
                         </p>                
                     </article>
-                    <article>
+                    <article class="hidden post">
                         <img class="article-img" src="images/post-img-05.jpg" alt="Post thumbnail">
                         <span class="article-info">July 23, 2022</span>
                         <h2 class="article-title">Blog five</h2>
@@ -67,8 +72,8 @@
                             After several months of learning in the Frontend Developer Career Path.
                         </p>                
                     </article>
-                    <article>
-                        <img  class="article-img" src="images/post-img-06.jpg" alt="Post thumbnail">
+                    <article class="hidden post">
+                        <img class="article-img" src="images/post-img-06.jpg" alt="Post thumbnail">
                         <span class="article-info">July 23, 2022</span>
                         <h2 class="article-title">Blog six</h2>
                         <p class="article-preview">
@@ -78,7 +83,7 @@
                     </article>
                 </div>
                 <div class="view-more">
-                    <a href="#">View More</a>
+                    <button id="view-more-btn">View More</button>
                 </div>
 
             </section>

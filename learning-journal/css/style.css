@@ -7,6 +7,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #FAFAFA;
     margin: 0;
+    min-width: 366px;
     /* fix smaller mobile width issues */
 }
 
@@ -71,19 +72,30 @@ footer p {
 .featured {
     background-image: url('../images/featured-post-img.png');
     background-size: cover;
-    background-color: #151515;
-    color: #fff;
-    padding: 6em 1.25em 0.75em;
 }
 
-.featured .article-info {
+.featured a {
+    text-decoration: none;
+}
+
+.featured-text {
+    color: #fff;
+    padding: 6em 0 0.75em;
+}
+
+.featured-text .article-info {
     font-size: 0.75rem;
 }
 
-.featured .article-title {
+.featured-text .article-title {
     font-size: 2rem;
     line-height: 1.1;
     margin: 0.15em 0;
+}
+
+.featured-text .article-preview {
+    color: #fff;
+    max-width: 625px;
 }
 
 .featured-title {
@@ -138,9 +150,23 @@ article {
     margin: 0 0 1.5em;
 }
 
+.hidden {
+    display: none;
+}
+
 .view-more {
     text-align: center;
     margin-bottom: 2.5em;
+}
+
+.view-more button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 /* =================
@@ -151,10 +177,10 @@ article {
 .logo,
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 .site-header {
-    align-items: center;
     justify-content: space-between;
     padding: 0.5em 1.5em;
 }
@@ -200,6 +226,26 @@ ul {
    ================= */
 
 @media (min-width: 768px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .featured-text {
+        padding: 18em 0 2em;
+    }
+    
+    .featured-text .article-title {
+    font-size: 2.5rem;
+    }
+
+    .featured-title {
+        font-size: 2.25rem;
+    }
+
     .about {
         display: flex;
         align-items: center;
