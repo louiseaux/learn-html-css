@@ -56,7 +56,7 @@ footer {
 }
 
 footer p {
-    margin: 0.25em 0 0;
+    margin: 0;
 }
 
 .footer-info {
@@ -130,11 +130,11 @@ article {
     color: #505050;
 }
 
-.recent-posts {
+.recent-title {
     text-align: center;
 }
 
-.recent-posts h3 {
+.recent-title h3 {
     margin: 0 0 1.5em;
 }
 
@@ -191,10 +191,6 @@ ul {
     margin: 0.5em 0 0;
 }
 
-.about-info {
-    margin-bottom: 2.5em;
-}
-
 .avatar {
     border-radius: 50%;
 }
@@ -204,7 +200,7 @@ ul {
    ================= */
 
 @media (min-width: 768px) {
-    .about-info {
+    .about {
         display: flex;
         align-items: center;
         gap: 1.5em;
